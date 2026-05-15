@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="id" data-mode="github">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pahrul Pyxzy | IT × Meme</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body data-mode="github">
+    <!-- MODE TOGGLE -->
+    <button class="btn btn-sm rounded-pill mode-btn" onclick="toggleMode()">
+      <span id="modeIcon">☀️</span>
+      <span id="modeText">Meme Mode</span>
+    </button>
+
+    <main class="main-layout">
+      <!-- =========================
+           HEADER
+      ========================== -->
+      <header class="mb-3">
+        <div class="card text-center p-4">
+          <h1 class="fw-bold mb-3">Pahrul Pyxzy</h1>
+
+          <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <!-- GITHUB -->
+            <a
+              href="#githubSection"
+              id="githubBtn"
+              class="btn rounded-pill px-3 nav-btn d-flex align-items-center gap-2"
+            >
+              <img
+                src="https://www.svgrepo.com/show/512317/github-142.svg"
+                width="18"
+                height="18"
+                alt="GitHub"
+              />
+              GitHub
+            </a>
+
+            <!-- MEME -->
+            <a
+              href="#memeSection"
+              id="memeBtn"
+              class="btn rounded-pill px-3 nav-btn d-flex align-items-center gap-2"
+            >
+              😹 Meme
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <hr class="section-line" />
+
+      <!-- =========================
+           ABOUT + CONTACT
+      ========================== -->
+      <section>
+        <h5 class="mb-3">👨‍💻 IT × 😹 meme</h5>
+
+        <div class="row g-3">
+          <!-- ABOUT -->
+          <div class="col-md-6">
+            <div class="card p-4 h-100">
+              <h5 class="mb-3">👨 About Me</h5>
+
+              <p class="muted mb-0">
+                Ngoding buat ngerti gimana sistem bekerja,<br />
+                meme buat ngerti gimana internet bercanda.<br />
+                Sama-sama butuh kreativitas, bukan keseriusan. <br /><br />
+                Lagi belajar jadi programmer yang rapi di setiap code, dan
+                penikmat meme di setiap scroll internet.
+              </p>
+            </div>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="col-md-6">
+            <div class="card p-4 h-100">
+              <h5 class="mb-3">📞 Contact</h5>
+
+              <p class="muted mb-3">
+                Ada project menarik? Mau collab? Atau sekadar ngobrol soal tech
+                & meme?
+                <strong>DM aja, response time tergantung sinyal.</strong>
+              </p>
+
+              <div class="d-flex gap-2">
+                <!-- TIKTOK -->
+                <a
+                  href="https://tiktok.com/@pahrulpyxzy"
+                  target="_blank"
+                  class="btn rounded-pill px-3 nav-btn social-btn flex-fill d-flex align-items-center justify-content-center gap-2"
+                >
+                  <img
+                    src="https://www.svgrepo.com/show/473806/tiktok.svg"
+                    width="18"
+                    height="18"
+                    alt="TikTok"
+                  />
+
+                  TikTok
+                </a>
+
+                <!-- INSTAGRAM -->
+                <a
+                  href="https://instagram.com/pahrulpyxzy"
+                  target="_blank"
+                  class="btn rounded-pill px-3 nav-btn social-btn flex-fill d-flex align-items-center justify-content-center gap-2"
+                >
+                  <img
+                    src="https://www.svgrepo.com/show/452229/instagram-1.svg"
+                    width="18"
+                    height="18"
+                    alt="Instagram"
+                  />
+
+                  Instagram
+                </a>
+
+                <!-- OTHER -->
+                <a
+                  href="https://simplepahrul.github.io"
+                  target="_blank"
+                  class="btn rounded-pill px-3 nav-btn social-btn flex-fill d-flex align-items-center justify-content-center gap-2"
+                >
+                  🏃 Other
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-line" />
+
+      <!-- =========================
+           GITHUB SECTION
+      ========================== -->
+      <section id="githubSection">
+        <h5 class="mb-3">👨‍💻 GitHub</h5>
+
+        <!-- PROFILE + STATS (ALL IN ONE CARD) -->
+        <div class="card p-4 mb-3" id="githubProfile">loading profile...</div>
+
+        <!-- PROJECTS -->
+        <h6 class="mb-3">📦 Repositories</h6>
+        <div id="githubRepos"></div>
+
+        <!-- SKILLS -->
+        <h6 class="mb-3 mt-4">🧠 Skills</h6>
+        <div class="card p-4" id="githubSkills">loading skills...</div>
+      </section>
+
+      <hr class="section-line" />
+
+      <!-- =========================
+           MEME SECTION
+      ========================== -->
+      <section id="memeSection">
+        <h5 class="mb-3">😹 Meme</h5>
+
+        <div class="row g-3">
+          <!-- TOP VIDEOS -->
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <h6 class="mb-3">🎥 TikTok Meme</h6>
+
+              <blockquote
+                class="tiktok-embed"
+                cite="https://www.tiktok.com/@USERNAME/video/VIDEO_ID"
+                data-video-id="VIDEO_ID"
+                style="max-width: 100%; min-width: 100%"
+              >
+                <section></section>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <h6 class="mb-3">📸 Instagram Reel</h6>
+
+              <iframe
+                src="https://www.instagram.com/p/POST_ID/embed"
+                class="w-100 rounded"
+                style="height: 500px; border: 0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- BOTTOM PHOTOS -->
+          <div class="col-md-6">
+            <div class="card p-3">
+              <img
+                src="LINK_FOTO_TIKTOK_ATAU_PINTEREST"
+                class="img-fluid rounded"
+                style="height: 350px; object-fit: cover"
+                alt="meme image"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card p-3">
+              <img
+                src="LINK_FOTO_INSTAGRAM_ATAU_PINTEREST"
+                class="img-fluid rounded"
+                style="height: 350px; object-fit: cover"
+                alt="meme image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIKTOK EMBED SCRIPT -->
+      <script async src="https://www.tiktok.com/embed.js"></script>
+
+      <hr class="section-line" />
+
+      <!-- =========================
+           FOOTER
+      ========================== -->
+      <footer>
+        <div class="card text-center p-4">
+          <small class="muted d-block">
+            © 2026 Simple Pahrul<br />
+            code · meme · laugh
+          </small>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
