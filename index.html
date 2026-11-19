@@ -18,6 +18,8 @@
       rel="stylesheet"
     />
 
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -26,13 +28,11 @@
     <!-- MODE TOGGLE -->
     <button class="btn btn-sm rounded-pill mode-btn" onclick="toggleMode()">
       <span id="modeIcon">☀️</span>
-      <span id="modeText">Meme Mode</span>
+      <span id="modeText">Shorts Mode</span>
     </button>
 
     <main class="main-layout">
-      <!-- =========================
-           HEADER
-      ========================== -->
+      <!-- ========================= HEADER ========================== -->
       <header class="mb-3">
         <div class="card text-center p-4">
           <h1 class="fw-bold mb-3">Pahrul Pyxzy</h1>
@@ -53,13 +53,14 @@
               GitHub
             </a>
 
-            <!-- MEME -->
+            <!-- SHORTS -->
             <a
-              href="#memeSection"
-              id="memeBtn"
+              href="#shortsSection"
+              id="shortsBtn"
               class="btn rounded-pill px-3 nav-btn d-flex align-items-center gap-2"
             >
-              😹 Meme
+              <i data-lucide="clapperboard" class="icon"></i>
+              Shorts
             </a>
           </div>
         </div>
@@ -67,22 +68,27 @@
 
       <hr class="section-line" />
 
-      <!-- =========================
-           ABOUT + CONTACT
-      ========================== -->
+      <!-- ========================= ABOUT + CONTACT ========================== -->
       <section>
-        <h5 class="mb-3">👨‍💻 IT × 😹 meme</h5>
+        <h5 class="mb-3 d-flex align-items-center gap-2">
+          <i data-lucide="computer" class="icon"></i>
+          <span>IT × Meme</span>
+          <i data-lucide="laugh" class="icon"></i>
+        </h5>
 
         <div class="row g-3">
           <!-- ABOUT -->
           <div class="col-md-6">
             <div class="card p-4 h-100">
-              <h5 class="mb-3">👨 About Me</h5>
+              <h5 class="mb-3">
+                <i data-lucide="user" class="icon"></i>
+                About Me
+              </h5>
 
               <p class="muted mb-0">
-                Ngoding buat ngerti gimana sistem bekerja,<br />
-                meme buat ngerti gimana internet bercanda.<br />
-                Sama-sama butuh kreativitas, bukan keseriusan. <br /><br />
+                Ngoding buat ngerti gimana sistem bekerja, meme buat ngerti
+                gimana internet bercanda. Sama-sama butuh kreativitas, bukan
+                keseriusan. <br /><br />
                 Lagi belajar jadi programmer yang rapi di setiap code, dan
                 penikmat meme di setiap scroll internet.
               </p>
@@ -92,7 +98,10 @@
           <!-- CONTACT -->
           <div class="col-md-6">
             <div class="card p-4 h-100">
-              <h5 class="mb-3">📞 Contact</h5>
+              <h5 class="mb-3">
+                <i data-lucide="phone" class="icon"></i>
+                Contact
+              </h5>
 
               <p class="muted mb-3">
                 Ada project menarik? Mau collab? Atau sekadar ngobrol soal tech
@@ -113,7 +122,6 @@
                     height="18"
                     alt="TikTok"
                   />
-
                   TikTok
                 </a>
 
@@ -129,7 +137,6 @@
                     height="18"
                     alt="Instagram"
                   />
-
                   Instagram
                 </a>
 
@@ -138,8 +145,9 @@
                   href="https://simplepahrul.github.io"
                   target="_blank"
                   class="btn rounded-pill px-3 nav-btn social-btn flex-fill d-flex align-items-center justify-content-center gap-2"
+                  aria-label="Simple Pahrul"
                 >
-                  🏃 Other
+                  <i data-lucide="sport-shoe"></i>
                 </a>
               </div>
             </div>
@@ -149,84 +157,90 @@
 
       <hr class="section-line" />
 
-      <!-- =========================
-           GITHUB SECTION
-      ========================== -->
+      <!-- ========================= GITHUB ========================== -->
       <section id="githubSection">
-        <h5 class="mb-3">👨‍💻 GitHub</h5>
+        <h5 class="mb-3">
+          <i data-lucide="computer" class="icon"></i>
+          GitHub
+        </h5>
 
-        <!-- PROFILE + STATS (ALL IN ONE CARD) -->
+        <!-- PROFILE -->
         <div class="card p-4 mb-3" id="githubProfile">loading profile...</div>
 
-        <!-- PROJECTS -->
-        <h6 class="mb-3">📦 Repositories</h6>
+        <!-- REPOS -->
+        <h6 class="mb-3">
+          <i data-lucide="folder-git-2" class="icon"></i>
+          Repositories
+        </h6>
         <div id="githubRepos"></div>
 
         <!-- SKILLS -->
-        <h6 class="mb-3 mt-4">🧠 Skills</h6>
+        <h6 class="mb-3 mt-4">
+          <i data-lucide="code" class="icon"></i>
+          Skills
+        </h6>
         <div class="card p-4" id="githubSkills">loading skills...</div>
       </section>
 
       <hr class="section-line" />
 
-<!-- =========================
-     MEME SECTION
-========================== -->
-<section id="memeSection">
-  <h5 class="mb-3">😹 Meme</h5>
+      <!-- ========================= YOUTUBE SHORTS ========================== -->
+      <section id="shortsSection">
+        <h5 class="mb-3">
+          <i data-lucide="clapperboard" class="icon"></i>
+          YouTube Shorts
+        </h5>
 
-  <div class="row g-3">
-    <!-- SHORT 1 -->
-    <div class="col-md-6">
-      <div class="card p-3 h-100">
-        <div
-          class="ratio mx-auto w-100"
-          style="--bs-aspect-ratio: 177.78%; max-width: 360px"
-        >
-          <iframe
-            src="https://www.youtube.com/embed/eQwFTmM17WU"
-            title="YouTube Short 1"
-            class="rounded"
-            style="border: 0"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
+        <div class="row g-3">
+          <!-- SHORT 1 -->
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <div
+                class="ratio mx-auto w-100"
+                style="--bs-aspect-ratio: 177.78%; max-width: 360px"
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/eQwFTmM17WU"
+                  title="YouTube Short 1"
+                  class="rounded"
+                  style="border: 0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
 
-    <!-- SHORT 2 -->
-    <div class="col-md-6">
-      <div class="card p-3 h-100">
-        <div
-          class="ratio mx-auto w-100"
-          style="--bs-aspect-ratio: 177.78%; max-width: 360px"
-        >
-          <iframe
-            src="https://www.youtube.com/embed/nwRxWwMTlHE"
-            title="YouTube Short 2"
-            class="rounded"
-            style="border: 0"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <!-- SHORT 2 -->
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <div
+                class="ratio mx-auto w-100"
+                style="--bs-aspect-ratio: 177.78%; max-width: 360px"
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/nwRxWwMTlHE"
+                  title="YouTube Short 2"
+                  class="rounded"
+                  style="border: 0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <hr class="section-line" />
 
-      <!-- =========================
-           FOOTER
-      ========================== -->
+      <!-- ========================= FOOTER ========================== -->
       <footer>
         <div class="card text-center p-4">
           <small class="muted d-block">
-            © 2026 Simple Pahrul<br />
+            © 2026 Pahrul Pyxzy<br />
             code · meme · laugh
           </small>
         </div>
