@@ -259,8 +259,8 @@ body[data-mode="github"]::before {
 /* Meme grid */
 body[data-mode="meme"]::before {
   background-image:
-    linear-gradient(to right, rgba(255, 0, 51, 0.28) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 0, 51, 0.28) 1px, transparent 1px);
+    linear-gradient(to right, rgba(252, 76, 2, 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(252, 76, 2, 0.28) 1px, transparent 1px);
   opacity: 0.4;
 }
 
@@ -323,14 +323,14 @@ body[data-mode="github"] .card::before {
 
 /* Meme card */
 body[data-mode="meme"] .card:hover {
-  border-color: rgba(255, 0, 51, 0.55);
-  box-shadow: 0 10px 25px rgba(255, 0, 51, 0.18);
+  border-color: rgba(252, 76, 2, 0.55);
+  box-shadow: 0 10px 25px rgba(252, 76, 2, 0.18);
 }
 
 body[data-mode="meme"] .card::before {
   background: radial-gradient(
     circle at top left,
-    rgba(255, 0, 51, 0.18),
+    rgba(252, 76, 2, 0.18),
     transparent 60%
   );
 }
@@ -355,7 +355,7 @@ body[data-mode="meme"] .card::before {
   }
 
   body[data-mode="meme"] .card:active {
-    box-shadow: 0 6px 18px rgba(255, 0, 51, 0.15);
+    box-shadow: 0 6px 18px rgba(252, 76, 2, 0.15);
   }
 }
 
@@ -403,7 +403,7 @@ body[data-mode="meme"] .section-line::before {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 0, 51, 0.7),
+    rgba(252, 76, 2, 0.7),
     transparent
   );
   opacity: 1;
