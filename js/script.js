@@ -26,7 +26,9 @@ function toggleMode() {
 
   const isGithub = body.dataset.mode === "github";
 
-  body.dataset.mode = isGithub ? "meme" : "github";
+  const nextMode = isGithub ? "meme" : "github";
+  body.dataset.mode = nextMode;
+  document.documentElement.dataset.mode = nextMode;
 
   modeText.innerText = isGithub ? "GitHub Mode" : "Meme Mode";
   modeIcon.innerText = isGithub ? "🌙" : "☀️";

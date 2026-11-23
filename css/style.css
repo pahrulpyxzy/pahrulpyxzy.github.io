@@ -11,8 +11,8 @@
   --accent: #2f81f7;
 }
 
-/* SHORTS MODE VARIABLES */
-body[data-mode="shorts"] {
+/* MEME MODE VARIABLES */
+body[data-mode="meme"] {
   --bg: #f7f7f7;
   --card: #ffffff;
   --border: #e5e7eb;
@@ -67,11 +67,11 @@ body[data-mode="github"] a:hover {
   color: #ff0033;
 }
 
-body[data-mode="shorts"] a {
+body[data-mode="meme"] a {
   color: #ff0033;
 }
 
-body[data-mode="shorts"] a:hover {
+body[data-mode="meme"] a:hover {
   color: #2f81f7;
 }
 
@@ -115,14 +115,14 @@ body[data-mode="github"] .mode-btn:hover {
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* Shorts toggle */
-body[data-mode="shorts"] .mode-btn {
+/* Meme toggle */
+body[data-mode="meme"] .mode-btn {
   background: white;
   color: #111827;
   border-color: #d1d5db;
 }
 
-body[data-mode="shorts"] .mode-btn:hover {
+body[data-mode="meme"] .mode-btn:hover {
   background: #f3f4f6;
 }
 
@@ -143,32 +143,32 @@ body[data-mode="github"] #githubBtn {
   border-color: #2f81f7;
 }
 
-body[data-mode="github"] #shortsBtn {
+body[data-mode="github"] #memeBtn {
   background: transparent;
   color: #c9d1d9;
   border-color: #30363d;
 }
 
-body[data-mode="github"] #shortsBtn:hover {
+body[data-mode="github"] #memeBtn:hover {
   background: rgba(47, 129, 247, 0.08);
   color: #2f81f7;
   border-color: #2f81f7;
 }
 
-/* Shorts nav state */
-body[data-mode="shorts"] #githubBtn {
+/* Meme nav state */
+body[data-mode="meme"] #githubBtn {
   background: transparent;
   color: #111827;
   border-color: #d1d5db;
 }
 
-body[data-mode="shorts"] #githubBtn:hover {
+body[data-mode="meme"] #githubBtn:hover {
   background: rgba(255, 0, 51, 0.08);
   color: #ff0033;
   border-color: #ff0033;
 }
 
-body[data-mode="shorts"] #shortsBtn {
+body[data-mode="meme"] #memeBtn {
   background: #ff0033;
   color: white;
   border-color: #ff0033;
@@ -196,13 +196,13 @@ body[data-mode="github"] .social-btn:hover {
   border-color: #2f81f7;
 }
 
-body[data-mode="shorts"] .social-btn {
+body[data-mode="meme"] .social-btn {
   background: white;
   color: #111827;
   border-color: #d1d5db;
 }
 
-body[data-mode="shorts"] .social-btn:hover {
+body[data-mode="meme"] .social-btn:hover {
   background: rgba(255, 0, 51, 0.08);
   color: #ff0033;
   border-color: #ff0033;
@@ -248,8 +248,8 @@ body[data-mode="github"]::before {
   opacity: 0.45;
 }
 
-/* Shorts grid */
-body[data-mode="shorts"]::before {
+/* Meme grid */
+body[data-mode="meme"]::before {
   background-image:
     linear-gradient(to right, rgba(255, 0, 51, 0.28) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 0, 51, 0.28) 1px, transparent 1px);
@@ -313,13 +313,13 @@ body[data-mode="github"] .card::before {
   );
 }
 
-/* Shorts card */
-body[data-mode="shorts"] .card:hover {
+/* Meme card */
+body[data-mode="meme"] .card:hover {
   border-color: rgba(255, 0, 51, 0.55);
   box-shadow: 0 10px 25px rgba(255, 0, 51, 0.18);
 }
 
-body[data-mode="shorts"] .card::before {
+body[data-mode="meme"] .card::before {
   background: radial-gradient(
     circle at top left,
     rgba(255, 0, 51, 0.18),
@@ -346,7 +346,7 @@ body[data-mode="shorts"] .card::before {
     box-shadow: 0 6px 18px rgba(47, 129, 247, 0.12);
   }
 
-  body[data-mode="shorts"] .card:active {
+  body[data-mode="meme"] .card:active {
     box-shadow: 0 6px 18px rgba(255, 0, 51, 0.15);
   }
 }
@@ -388,10 +388,10 @@ body[data-mode="github"] .section-line::before {
 }
 
 /* =========================
-   SHORTS MODE HR
+   MEME MODE HR
 ========================= */
 
-body[data-mode="shorts"] .section-line::before {
+body[data-mode="meme"] .section-line::before {
   background: linear-gradient(
     90deg,
     transparent,
